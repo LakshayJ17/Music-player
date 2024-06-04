@@ -102,8 +102,48 @@ nav ul li {
 
 #myProgressBar {
     width: 72vw;
-    cursor: pointer;
+    height: 5px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    outline: none;
 }
+
+#myProgressBar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: #1db954;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+#myProgressBar::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background-color: #1db954;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+#myProgressBar::-webkit-slider-thumb:hover {
+    background-color: #1ed760;
+}
+
+#myProgressBar::-moz-range-thumb:hover {
+    background-color: #1ed760;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 
 .songItemContainer {
     margin-top: 54px;
@@ -120,4 +160,8 @@ nav ul li {
 .songInfo img {
     opacity: 0;
     transition: opacity 0.4s ease-in;
+}
+
+#gif {
+    margin-right: 20px;
 }
