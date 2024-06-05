@@ -52,6 +52,10 @@ nav ul li {
 
 }
 
+.songItemContainer {
+    margin-top: 54px;
+}
+
 .songItem {
     height: 70px;
     display: flex;
@@ -144,12 +148,6 @@ input[type="range"] {
     appearance: none;
 }
 
-
-.songItemContainer {
-    margin-top: 54px;
-}
-
-
 .songInfo {
     position: absolute;
     left: 14vw;
@@ -164,4 +162,10 @@ input[type="range"] {
 
 #gif {
     margin-right: 20px;
+}
+
+#songTimer{
+    position: absolute;
+    right: 14vw;
+    font-family: "Varela Round", sans-serif;
 }
